@@ -7,7 +7,7 @@ class OperationData {
 	public $person_id;
 	public $kind;
 	public $status;
-	public $created_at;
+	public $created_at, $sx;
 
 	public function __construct(){
 		$this->id = "";
