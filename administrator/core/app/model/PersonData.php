@@ -1,12 +1,24 @@
 <?php
 class PersonData {
 	public static $tablename = "person";
+	public $id;
+	public $name;
+	public $lastname;
+	public $email;
+	public $address;
+	public $phone;
+	public $image;
+	public $password;
+	public $created_at;
 
 	public function __construct(){
+		$this->id = "";
 		$this->name = "";
 		$this->lastname = "";
-		$this->username = "";
 		$this->email = "";
+		$this->address = "";
+		$this->phone = "";
+		$this->image = "";
 		$this->password = "";
 		$this->created_at = "NOW()";
 	}

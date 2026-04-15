@@ -1,13 +1,21 @@
 <?php
 class OperationData {
 	public static $tablename = "operation";
+	public $id;
+	public $description;
+	public $amount;
+	public $person_id;
+	public $kind;
+	public $status;
+	public $created_at;
 
 	public function __construct(){
-		$this->name = "";
-		$this->lastname = "";
-		$this->username = "";
-		$this->email = "";
-		$this->password = "";
+		$this->id = "";
+		$this->description = "";
+		$this->amount = "";
+		$this->person_id = "";
+		$this->kind = "";
+		$this->status = "1";
 		$this->created_at = "NOW()";
 	}
 

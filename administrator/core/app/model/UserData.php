@@ -1,13 +1,27 @@
 <?php
 class UserData {
 	public static $tablename = "user";
+	public $id;
+	public $name;
+	public $lastname;
+	public $username;
+	public $email;
+	public $password;
+	public $image;
+	public $status;
+	public $kind;
+	public $created_at;
 
 	public function __construct(){
+		$this->id = "";
 		$this->name = "";
 		$this->lastname = "";
 		$this->username = "";
 		$this->email = "";
 		$this->password = "";
+		$this->image = "";
+		$this->status = "";
+		$this->kind = "";
 		$this->created_at = "NOW()";
 	}
 
